@@ -6,7 +6,7 @@ A web application that analyzes chat files and generates visual insights using L
 
 Elyx Chat Analysis is a tool that processes chat text files to generate comprehensive health journey insights. The application extracts patient personas, health progress tracking, clinical decision analysis, and professional time tracking from conversation data.
 
-![Elyx Screenshot](https://i.imgur.com/placeholder.png)
+
 
 ## Features
 
