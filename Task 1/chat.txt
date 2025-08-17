@@ -1,0 +1,192 @@
+Month 1 – Onboarding & Baseline (March 2025)
+
+[3/12/25, 9:05 AM] Rohan: Hi Ruby, just signed up. Excited but also a bit nervous. Where do we start?
+
+[3/12/25, 9:20 AM] Ruby (Concierge): Welcome, Rohan! We’ll start with onboarding and a baseline diagnostic test. I’ll schedule labs + ECG this week in Singapore.
+
+[3/12/25, 9:25 AM] Rohan: Great. Morning slots only please.
+
+[3/12/25, 9:30 AM] Ruby (Concierge): Done. Appointment booked for Friday 8 AM at Raffles Medical.
+
+[3/13/25, 7:00 AM] Rohan: Advik, my Garmin shows HR spikes during sleep. Normal?
+
+[3/13/25, 7:15 AM] Advik (Performance): Data suggests elevated HRV strain. Could be late meals or stress. Did you eat after 10 PM?
+
+[3/13/25, 7:20 AM] Rohan: Yes, had noodles at midnight.
+
+[3/13/25, 7:30 AM] Advik (Performance): That explains it. Let’s track food timing vs HRV.
+
+[3/15/25, 8:00 PM] Rohan: Carla, can I keep having morning lattes with sugar? Or do I have to stop?
+
+[3/15/25, 8:15 PM] Carla (Nutrition): Let’s cut added sugar. Switch to unsweetened almond milk latte. Supports blood sugar stability.
+
+[3/15/25, 8:20 PM] Rohan: Fine, I’ll try.
+
+[3/17/25, 6:45 AM] Rohan: Rachel, hotel gym in Jakarta has only light dumbbells. What do I do?
+
+[3/17/25, 7:00 AM] Rachel (PT): I’ll send you a travel-friendly strength circuit. Bodyweight + bands. attached: Hotel_Workout_v1.pdf
+
+[3/17/25, 7:05 AM] Rohan: Perfect.
+
+[3/20/25, 8:00 AM] Ruby (Concierge): Weekly report:
+• Average sleep: 6h 20m (target 7h 30m)
+• Workouts completed: 3/5
+• Glucose levels: slightly elevated after late dinners
+
+[3/20/25, 8:10 AM] Rohan: Consistent with how I feel.
+
+Month 2 – Early Adjustments (April 2025)
+
+[4/2/25, 9:00 PM] Rohan: Back from Manila. Jet lag bad. Recovery 28%.
+
+[4/2/25, 9:15 PM] Advik (Performance): Sun exposure + delaying caffeine will help reset. Log hydration too.
+
+[4/5/25, 10:00 AM] Ruby (Concierge): Reminder: full diagnostic panel due end April. Shall I book in Singapore?
+
+[4/5/25, 10:05 AM] Rohan: Yes.
+
+[4/10/25, 7:00 AM] Rohan: Carla, is intermittent fasting safe for pre-diabetes?
+
+[4/10/25, 7:15 AM] Carla (Nutrition): It can help, but consistency first. Let’s stabilize dinners before adding fasting.
+
+[4/12/25, 8:00 AM] Rachel (PT): Rohan, your plan updated. Increased resistance, plus mobility drills. attached: Strength_Block2.pdf
+
+[4/12/25, 8:10 AM] Rohan: Looks good.
+
+[4/20/25, 8:00 AM] Ruby (Concierge): Weekly report:
+• Workouts: 4/5
+• Sleep avg: 6h 50m
+• HRV baseline: improving
+• Glucose: spikes still after 10 PM meals
+
+[4/25/25, 9:00 AM] Ruby (Concierge): Diagnostic today—lipids, OGTT, DEXA, VO₂ max, etc.
+
+[4/27/25, 4:00 PM] Dr. Warren (Medical): Results:
+• Fasting glucose: 109 (elevated)
+• ApoB: borderline high
+• VO₂ max: 38 (below optimal)
+Plan: more Zone 2 cardio + nutrition tweaks.
+
+[4/27/25, 4:15 PM] Rohan: Okay. Not thrilled, but I’ll try.
+
+Month 3 – First Course Correction (May 2025)
+
+[5/3/25, 8:00 AM] Rohan: Whoop recovery only 30% despite sleeping 7 hrs. Why?
+
+[5/3/25, 8:15 AM] Advik (Performance): Your glucose stayed high till 2 AM. Likely heavy late meal.
+
+[5/7/25, 9:00 AM] Rohan: Skipped 2 workouts. Work travel to Tokyo crushed me.
+
+[5/7/25, 9:15 AM] Rachel (PT): No problem. Do 20-min bodyweight circuits in hotel. Minimum effective dose.
+
+[5/10/25, 9:00 AM] Carla (Nutrition): Adjusted dinner plan: lighter carbs, earlier meals. attached: Dinner_Plan_May.pdf
+
+[5/10/25, 9:05 AM] Rohan: Okay.
+
+[5/15/25, 8:00 AM] Ruby (Concierge): Weekly report:
+• Sleep: 6h 40m
+• Workouts: 2/5 (low)
+• Glucose: improving after dinner changes
+
+[5/20/25, 9:00 AM] Rohan: Feeling like I’m not making enough progress.
+
+[5/20/25, 9:15 AM] Neel (Lead): Foundation months are slow. By July, diagnostics will show stronger results.
+
+Month 4 – Travel & Frustrations (June 2025)
+
+[6/2/25, 7:00 AM] Rohan: Back-to-back flights. Sleep trashed.
+
+[6/2/25, 7:15 AM] Advik (Performance): Confirmed. HRV dipped 25%. Suggest light activity + naps.
+
+[6/5/25, 9:00 AM] Ruby (Concierge): Weekly report:
+• Sleep avg: 6h 10m
+• Workouts: 3/5
+• HRV: lowest since April
+• Compliance: 60%
+
+[6/12/25, 8:00 AM] Rachel (PT): Updating program with more mobility, given travel strain. attached: Strength_Block3.pdf
+
+[6/12/25, 8:05 AM] Rohan: Thanks.
+
+[6/18/25, 9:00 AM] Rohan: Reading about continuous glucose monitors (CGMs). Worth trying?
+
+[6/18/25, 9:15 AM] Dr. Warren (Medical): Yes, valuable for pre-diabetes. Ruby can arrange.
+
+[6/18/25, 9:20 AM] Ruby (Concierge): CGM ordered.
+
+Month 5 – Second Diagnostic (July 2025)
+
+[7/2/25, 9:00 AM] Ruby (Concierge): Reminder: full diagnostic July 8.
+
+[7/8/25, 3:00 PM] Dr. Warren (Medical): Results:
+• Fasting glucose: 101 (improved)
+• ApoB: reduced by 12%
+• VO₂ max: 40 (small gain)
+Plan: maintain cardio, continue diet, monitor CGM.
+
+[7/8/25, 3:10 PM] Rohan: Encouraging!
+
+[7/10/25, 7:00 AM] Rohan: CGM shows big spike after pasta dinner.
+
+[7/10/25, 7:15 AM] Carla (Nutrition): Correct. Let’s swap pasta for lentil-based options.
+
+[7/20/25, 9:00 AM] Ruby (Concierge): Weekly report:
+• Workouts: 4/5
+• Sleep avg: 7 hrs
+• Glucose: trending down
+
+Month 6 – Midpoint Review (August 2025)
+
+[8/1/25, 8:00 AM] Neel (Lead): Midpoint review:
+• Glucose control improving
+• Lipids trending positive
+• Sleep still inconsistent
+Next 3 months: focus on recovery + stress management.
+
+[8/5/25, 7:00 AM] Rohan: Tried meditation app. Couldn’t focus.
+
+[8/5/25, 7:15 AM] Advik (Performance): Doesn’t matter—HRV improved 5 points. Keep going.
+
+[8/12/25, 8:00 AM] Rachel (PT): New program uploaded. More core + mobility. attached: Strength_Block4.pdf
+
+[8/12/25, 8:05 AM] Rohan: Great.
+
+Month 7 – Gains & Consistency (September 2025)
+
+[9/3/25, 9:00 AM] Ruby (Concierge): Reminder: diagnostic scheduled for Sept 25.
+
+[9/25/25, 3:00 PM] Dr. Warren (Medical): Results:
+• Fasting glucose: 96 (normalizing)
+• ApoB: near optimal
+• VO₂ max: 42
+• Grip strength up 8%
+
+[9/25/25, 3:10 PM] Rohan: Best results yet.
+
+[9/28/25, 9:00 AM] Ruby (Concierge): Weekly report:
+• Compliance: 80%
+• Workouts: 5/5
+• Glucose: stable
+• HRV: strong upward trend
+
+Month 8 – Consolidation (October 2025)
+
+[10/5/25, 9:00 AM] Rohan: Finally doing 3 cardio sessions/week. Feels good.
+
+[10/5/25, 9:15 AM] Rachel (PT): Excellent. VO₂ max should show strong improvement next.
+
+[10/15/25, 9:00 AM] Rohan: Reading about metformin for longevity. Should I ask about it?
+
+[10/15/25, 9:20 AM] Dr. Warren (Medical): Not needed now. Lifestyle interventions working well.
+
+[10/25/25, 8:00 AM] Ruby (Concierge): End-of-cycle diagnostic today.
+
+[10/28/25, 3:00 PM] Dr. Warren (Medical): Final results:
+• Glucose: 94 (normal)
+• ApoB: optimal
+• VO₂ max: 44
+• Body fat: down 3%
+
+[10/28/25, 3:15 PM] Neel (Lead): Fantastic progress. From here → long-term sustainability plan.
+
+[10/28/25, 3:20 PM] Rohan: Thanks team. Best health I’ve felt in years.

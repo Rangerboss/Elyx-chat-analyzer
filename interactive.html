@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elyx - Analysis Results</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            font-family: 'Arial', sans-serif;
+            overflow-x: hidden;
+            background-color: #121212;
+            color: #ffffff;
+        }
+        .background-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.5;
+        }
+        .content {
+            position: relative;
+            z-index: 1;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px 0;
+            margin-bottom: 30px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+        .tab {
+            padding: 12px 24px;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            margin: 0 5px 10px;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        .tab.active {
+            background-color: #4285f4;
+        }
+        .tab:hover:not(.active) {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.5s;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .card {
+            background-color: rgba(30, 30, 30, 0.7);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .content-wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        /* Ensure we display HTML content correctly */
+        .html-content h3, .html-content h2 {
+            color: inherit;
+        }
+        .html-content div, .html-content p, .html-content ul, .html-content li {
+            color: inherit;
+            font-family: inherit;
+        }
+        .html-content table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .html-content td, .html-content th {
+            padding: 8px;
+        }
+        /* Back button */
+        .back-btn {
+            background-color: #757575;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s;
+            margin-top: 20px;
+        }
+        .back-btn:hover {
+            background-color: #616161;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-container">
+        <iframe src='https://my.spline.design/untitled-pgirDbd48dL7cxToZ2YLe963/' frameborder='0' width='100%' height='100%'></iframe>
+    </div>
+    
+    <div class="content">
+        <div class="content-wrapper">
+            <header>
+                <h1>Elyx Analysis Results</h1>
+            </header>
+            
+            <div class="tabs">
+                <button class="tab active" data-tab="persona">Persona</button>
+                <button class="tab" data-tab="progress">Progress</button>
+                <button class="tab" data-tab="decision">Decision Analysis</button>
+                <button class="tab" data-tab="track">Resource Tracking</button>
+            </div>
+            
+            <div id="persona-tab" class="tab-content active">
+                <div class="card">
+                    <div class="html-content" id="persona-content">
+                        Loading persona data...
+                    </div>
+                </div>
+            </div>
+            
+            <div id="progress-tab" class="tab-content">
+                <div class="card">
+                    <div class="html-content" id="progress-content">
+                        Loading progress data...
+                    </div>
+                </div>
+            </div>
+            
+            <div id="decision-tab" class="tab-content">
+                <div class="card">
+                    <div class="html-content" id="decision-content">
+                        Loading decision analysis data...
+                    </div>
+                </div>
+            </div>
+            
+            <div id="track-tab" class="tab-content">
+                <div class="card">
+                    <div class="html-content" id="track-content">
+                        Loading resource tracking data...
+                    </div>
+                </div>
+            </div>
+            
+            <button id="back-btn" class="back-btn">Upload New Chat</button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('.tab');
+            const tabContents = document.querySelectorAll('.tab-content');
+            const backBtn = document.getElementById('back-btn');
+            
+            // Tab switching functionality
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    const tabId = this.getAttribute('data-tab');
+                    
+                    // Update active tab
+                    tabs.forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Show active tab content
+                    tabContents.forEach(content => {
+                        content.classList.remove('active');
+                        if (content.id === `${tabId}-tab`) {
+                            content.classList.add('active');
+                        }
+                    });
+                });
+            });
+            
+            // Back button handler
+            backBtn.addEventListener('click', function() {
+                window.location.href = 'index.html';
+            });
+            
+            // Load data from localStorage
+            const responseData = JSON.parse(localStorage.getItem('responseData'));
+            
+            if (responseData) {
+                displayContent('persona', responseData.persona);
+                displayContent('progress', responseData.progress);
+                displayContent('decision', responseData.decision);
+                displayContent('track', responseData.track);
+            } else {
+                console.error('No response data found in localStorage');
+                displayError();
+            }
+            
+            function displayContent(type, content) {
+                const contentElement = document.getElementById(`${type}-content`);
+                
+                if (content) {
+                    // Clean up the content - remove "\n" or "/n" 
+                    const cleanedContent = content
+                        .replace(/\\n/g, '')
+                        .replace(/\/n/g, '');
+                    
+                    try {
+                        // Check if the content starts with HTML-like text (it might be from AI)
+                        if (cleanedContent.includes('<div') || 
+                            cleanedContent.includes('<h') || 
+                            cleanedContent.includes('<p>')) {
+                            // Extract HTML from the response
+                            contentElement.innerHTML = cleanedContent;
+                        } else {
+                            // Just display as is with some basic formatting
+                            contentElement.innerHTML = `<p>${cleanedContent}</p>`;
+                        }
+                    } catch (error) {
+                        console.error(`Error parsing ${type} content:`, error);
+                        contentElement.innerHTML = `<p>Error displaying content. Raw data: ${cleanedContent}</p>`;
+                    }
+                } else {
+                    contentElement.innerHTML = `<p>No ${type} data available.</p>`;
+                }
+            }
+            
+            function displayError() {
+                ['persona', 'progress', 'decision', 'track'].forEach(type => {
+                    const contentElement = document.getElementById(`${type}-content`);
+                    contentElement.innerHTML = '<p>No data available. Please go back and upload a chat file.</p>';
+                });
+            }
+        });
+    </script>
+</body>
+</html>

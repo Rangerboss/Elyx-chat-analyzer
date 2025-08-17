@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elyx - Chat Analysis</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            font-family: 'Arial', sans-serif;
+            overflow: hidden;
+        }
+        .background-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        .content {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            color: #fff;
+            text-align: center;
+            z-index: 1;
+        }
+        .upload-container {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 40px;
+            border-radius: 10px;
+            max-width: 500px;
+            width: 100%;
+        }
+        h1 {
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+        }
+        .file-input-container {
+            position: relative;
+            margin-bottom: 25px;
+        }
+        .file-input-label {
+            display: inline-block;
+            background-color: #4285f4;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .file-input-label:hover {
+            background-color: #3367d6;
+        }
+        #file-input {
+            position: absolute;
+            left: -9999px;
+        }
+        #file-name {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        .submit-btn {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+            width: 100%;
+        }
+        .submit-btn:hover {
+            background-color: #3e8e41;
+        }
+        .submit-btn:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-container">
+        <iframe src='https://my.spline.design/untitled-pgirDbd48dL7cxToZ2YLe963/' frameborder='0' width='100%' height='100%'></iframe>
+    </div>
+    
+    <div class="content">
+        <div class="upload-container">
+            <h1>Elyx Chat Analysis</h1>
+            <div class="file-input-container">
+                <label for="file-input" class="file-input-label">
+                    Choose Chat File (.txt)
+                </label>
+                <input type="file" id="file-input" accept=".txt">
+                <div id="file-name"></div>
+            </div>
+            <button id="submit-btn" class="submit-btn" disabled>Process Chat</button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const fileInput = document.getElementById('file-input');
+            const fileNameDisplay = document.getElementById('file-name');
+            const submitBtn = document.getElementById('submit-btn');
+            
+            fileInput.addEventListener('change', function() {
+                if (this.files && this.files[0]) {
+                    fileNameDisplay.textContent = "Selected file: " + this.files[0].name;
+                    submitBtn.disabled = false;
+                } else {
+                    fileNameDisplay.textContent = "";
+                    submitBtn.disabled = true;
+                }
+            });
+            
+            submitBtn.addEventListener('click', function() {
+                const file = fileInput.files[0];
+                if (file) {
+                    const reader = new FileReader();
+                    
+                    reader.onload = function(e) {
+                        const chatContent = e.target.result;
+                        
+                        // Send chat content to backend
+                        fetch('/getdata', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json'
+                            },
+                            body: JSON.stringify({ chat: chatContent })
+                        })
+                        .then(response => {
+                            if (!response.ok) {
+                                throw new Error(`Server responded with status: ${response.status}`);
+                            }
+                            return response.json();
+                        })
+                        .then(data => {
+                            if (data.status === "success") {
+                                // Redirect to loading page
+                                window.location.href = 'loading.html';
+                            } else {
+                                alert('Error: ' + data.message);
+                            }
+                        })
+                        .catch(error => {
+                            console.error('Error:', error);
+                            alert('Error uploading file. Please try again.');
+                        });
+                    };
+                    
+                    reader.readAsText(file);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
