@@ -25,10 +25,6 @@ Elyx Chat Analysis is a tool that processes chat text files to generate comprehe
 
 ### 1. Clone the repository
 
-```bash
-git clone https://github.com/yourusername/elyx-chat-analysis.git
-cd elyx-chat-analysis
-```
 
 ### 2. Install Ollama
 
